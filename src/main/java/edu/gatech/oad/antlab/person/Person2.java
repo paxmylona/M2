@@ -31,10 +31,25 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
-	}
-	/**
-	 * Return a string rep of this object
+        String newString = "";
+        Random rand = new Random();
+        int value = 0;
+        while (input.length() > 1) {
+            value = rand.nextInt(input.length() - 1);
+            newString += input.charAt(value);
+            if (value == 0) {
+                input = input.substring(1, input.length());
+            } else if (value == input.length()) {
+                input = input.substring(0, input.length() - 1);
+            } else {
+                input = input.substring(0, value) + input.substring(value + 1, input.length());
+            }
+        }
+        newString += input;
+        return newString;
+    }
+    /**
+     * Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
