@@ -9,10 +9,6 @@ apply plugin: 'java'
 
 
 dependencies {
-    //compile fileTree(dir: 'src/main/java/edu/gatech/oad/antlab/person')
-    //compile fileTree(dir: 'src/main/java/edu/gatech/oad/antlab/pkg2')
-    //runtime fileTree(dir: 'lib', include: '*.jar')
-    //compile name : 'resources'
     compile files('lib/resources.jar')
 
 }
@@ -21,6 +17,6 @@ jar {
     manifest {
         attributes("Implementation-Title" : "Gradle Quickstart",
                    "Class-Path" : '../../lib/resources.jar',
-                   "Main-Class" : 'edu/gatech/oad/antlab/pkg1/AntLabMain') //"Implementation-Version": version
+                   "Main-Class" : 'edu/gatech/oad/antlab/pkg1/AntLabMain')
     }
 }
