@@ -39,7 +39,7 @@ public class Person5 {
 		theNew = theNew + input.charAt(1);
 		String theNew2 = "";
 		for (int i = 2; i < input.length(); i++ ) {
-			theNew2 =  input.charAt(i) + theNew2;
+			theNew2 =  theNew2 + input.charAt(i);
 		}
 
 		return theNew2 + theNew;
