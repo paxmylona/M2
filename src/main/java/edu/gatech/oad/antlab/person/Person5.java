@@ -37,10 +37,12 @@ public class Person5 {
 		String theNew = "";
 		theNew = theNew + input.charAt(0) + theNew;
 		theNew = theNew + input.charAt(1);
+		String theNew2 = "";
 		for (int i = 2; i < input.length(); i++ ) {
-			theNew =  input.charAt(i) + theNew;
+			theNew2 =  input.charAt(i) + theNew2;
 		}
-		return theNew;
+
+		return theNew2 + theNew;
 	}
 	
 	/**
